@@ -19,7 +19,7 @@ interface UserProfile {
     avatar: string;
 }
 
-const DEFAULT_PROFILE = "/images/user.png";
+const DEFAULT_PROFILE = "https://zermoser.github.io/mos_mini_ai_chat/images/user.png";
 
 const ChatbotApp: React.FC = () => {
     const [messages, setMessages] = useState<Message[]>([
@@ -44,7 +44,7 @@ const ChatbotApp: React.FC = () => {
     });
     const [botProfile, setBotProfile] = useState({
         name: 'AI Assistant',
-        avatar: '/images/ai.png'
+        avatar: 'https://zermoser.github.io/mos_mini_ai_chat/images/ai.png'
     });
     const [showSettings, setShowSettings] = useState(false);
     const [showHelp, setShowHelp] = useState(false);
